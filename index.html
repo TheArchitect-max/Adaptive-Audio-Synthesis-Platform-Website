@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="Adaptive Audio Synthesis Platform is a proprietary audio-generation systems project focused on deterministic synthesis, durable render orchestration, verified artifacts, controlled delivery, and extensible future model backends.">
+  <meta property="og:title" content="Adaptive Audio Synthesis Platform">
+  <meta property="og:description" content="A proprietary audio-generation systems project designed around deterministic rendering, durable execution, controlled delivery, and verifiable artifacts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thearchitect-max.github.io/Adaptive-Audio-Synthesis-Platform-Website/">
+  <meta name="twitter:card" content="summary">
+  <title>Adaptive Audio Synthesis Platform — TheArchitectMax</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Adaptive Audio Synthesis Platform home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy"><strong>AASP</strong><small>Adaptive Audio Synthesis Platform</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary" data-nav>
+        <a href="#overview">Overview</a><a href="#capabilities">Capabilities</a><a href="#principles">Principles</a><a href="#status">Status</a><a class="nav-hub" href="https://thearchitect-max.github.io/MyProjects/">TheArchitectMax HUB</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-fog fog-a" aria-hidden="true"></div><div class="hero-fog fog-b" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Public project showcase · Development build</p>
+          <h1 id="hero-title">Sound, rendered<br><span>with control.</span></h1>
+          <p class="hero-lede">Adaptive Audio Synthesis Platform is a proprietary audio-generation systems project designed around deterministic synthesis, durable render orchestration, controlled service delivery, artifact integrity, and a clean path toward future learned audio backends.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#capabilities">Explore capabilities</a><a class="button button-ghost" href="https://thearchitect-max.github.io/MyProjects/">Portfolio HUB <span aria-hidden="true">↗</span></a></div>
+          <dl class="hero-meta" aria-label="Project summary"><div><dt>Focus</dt><dd>Audio systems</dd></div><div><dt>Core</dt><dd>C++20</dd></div><div><dt>Status</dt><dd>Active development</dd></div></dl>
+        </div>
+        <figure class="hero-visual" aria-labelledby="hero-visual-caption">
+          <div class="visual-frame"><img src="assets/hero-audio.svg" width="900" height="760" alt="Abstract conceptual visualization of layered audio waveforms and a bounded render pipeline"><div class="visual-label"><span></span>Conceptual visualization</div></div>
+          <figcaption id="hero-visual-caption">An illustrative representation of controlled audio flow. It is not a screenshot of the private runtime.</figcaption>
+        </figure>
+      </div>
+      <div class="shell hero-rule" aria-hidden="true"><span></span></div>
+    </section>
+    <section class="section intro" id="overview" aria-labelledby="overview-title">
+      <div class="shell editorial-grid"><div><p class="section-kicker">01 · Overview</p><h2 id="overview-title">Audio generation is only one part of the system.</h2></div><div class="prose-large"><p>Generating sound is useful. Managing the full lifecycle of a render is harder: requests need clear boundaries, jobs need durable state, artifacts need integrity checks, and delivery needs controlled interfaces.</p><p>AASP explores that broader systems problem. The project combines a deterministic reference synthesizer with orchestration, persistence, service, network and audit layers so the generation engine can evolve without rebuilding the surrounding platform.</p></div></div>
+    </section>
+    <section class="section capability-section" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="shell"><div class="section-heading"><div><p class="section-kicker">02 · Capabilities</p><h2 id="capabilities-title">A platform around the render.</h2></div><p>High-level capabilities of the current development build. Internal implementation details remain private.</p></div>
+        <div class="capability-grid">
+          <article class="cap-card spotlight-card"><div class="cap-index">01</div><h3>Deterministic reference synthesis</h3><p>A prompt-conditioned procedural renderer provides a reproducible baseline for audio-generation workflows and system qualification.</p><span class="cap-tag">Generation</span></article>
+          <article class="cap-card"><div class="cap-index">02</div><h3>Render orchestration</h3><p>Generation requests move through defined job and artifact lifecycles, separating render intent from execution and delivery.</p><span class="cap-tag">Orchestration</span></article>
+          <article class="cap-card"><div class="cap-index">03</div><h3>Durable execution</h3><p>Persistent job state, recovery behavior and bounded execution controls are designed to make rendering resilient to interrupted processes.</p><span class="cap-tag">Runtime</span></article>
+          <article class="cap-card"><div class="cap-index">04</div><h3>Artifact integrity</h3><p>Rendered outputs carry content hashes and verification metadata so stored artifacts can be checked for unintended modification.</p><span class="cap-tag">Provenance</span></article>
+          <article class="cap-card"><div class="cap-index">05</div><h3>Controlled service delivery</h3><p>Typed service and network boundaries expose audio jobs through constrained interfaces while keeping the generation core separate.</p><span class="cap-tag">Delivery</span></article>
+          <article class="cap-card"><div class="cap-index">06</div><h3>Scoped access &amp; audit</h3><p>The current network-facing development layer includes permission-scoped access controls and tamper-evident audit records.</p><span class="cap-tag">Governance</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="section system-view" aria-labelledby="system-title"><div class="shell"><div class="system-intro"><p class="section-kicker">System view</p><h2 id="system-title">Separated by responsibility.</h2><p>The public view intentionally stops at functional boundaries. Proprietary implementation logic, private schemas, internal security configuration and source code are not exposed here.</p></div><ol class="layer-stack" aria-label="High-level platform layers"><li><span class="layer-num">01</span><div><strong>Generation</strong><small>Audio rendering backend boundary</small></div></li><li><span class="layer-num">02</span><div><strong>Orchestration</strong><small>Jobs, artifacts and render lifecycle</small></div></li><li><span class="layer-num">03</span><div><strong>Durable runtime</strong><small>Persistent execution and recovery</small></div></li><li><span class="layer-num">04</span><div><strong>Service &amp; control</strong><small>Typed application-facing operations</small></div></li><li><span class="layer-num">05</span><div><strong>Delivery &amp; audit</strong><small>Bounded network access and traceability</small></div></li></ol></div></section>
+    <section class="section principles" id="principles" aria-labelledby="principles-title"><div class="shell"><div class="section-heading compact-heading"><div><p class="section-kicker">03 · Design principles</p><h2 id="principles-title">Built as a system, not a single model.</h2></div></div><div class="principle-grid"><article><span>Reproducibility</span><h3>Deterministic where the current renderer permits it.</h3><p>The reference path favors repeatable generation behavior and explicit identities for requests and outputs.</p></article><article><span>Separation</span><h3>Generation stays independent from transport.</h3><p>Audio logic, runtime concerns, service interfaces and network delivery are treated as distinct responsibilities.</p></article><article><span>Bounded execution</span><h3>Limits are part of the design.</h3><p>Queues, workers, requests and responses are constrained rather than treated as unbounded resources.</p></article><article><span>Verifiability</span><h3>Artifacts can be checked after rendering.</h3><p>Integrity metadata supports later verification without presenting that mechanism as signed or externally certified provenance.</p></article><article><span>Extensibility</span><h3>Future model backends can plug into an existing platform.</h3><p>The surrounding system is designed so a later owned or appropriately licensed learned backend does not require replacing every other layer.</p></article><article><span>Private IP boundary</span><h3>Public explanation without publishing the blueprint.</h3><p>This website explains purpose and capabilities while withholding proprietary implementation detail from the public presentation layer.</p></article></div></div></section>
+    <section class="section relevance" aria-labelledby="relevance-title"><div class="shell editorial-grid"><div><p class="section-kicker">04 · Relevance</p><h2 id="relevance-title">Where this work can matter.</h2></div><div class="relevance-list"><article><span>01</span><div><h3>Audio-generation R&amp;D</h3><p>A controlled platform around experimental or future generation backends.</p></div></article><article><span>02</span><div><h3>Reproducible rendering</h3><p>Workflows where repeatable reference outputs and explicit artifacts are useful.</p></div></article><article><span>03</span><div><h3>Generation infrastructure</h3><p>Exploration of how rendering, persistence, delivery and governance can operate as one coherent system.</p></div></article><article><span>04</span><div><h3>Future owned model integration</h3><p>A platform boundary prepared for later learned inference work without claiming that model capability exists today.</p></div></article></div></div></section>
+    <section class="section status" id="status" aria-labelledby="status-title"><div class="shell status-panel"><div class="status-copy"><p class="section-kicker">05 · Project status</p><h2 id="status-title">Active development.<br>Capability claims kept narrow.</h2><p>The current project includes a deterministic procedural reference renderer and a progressively hardened systems stack around it. It is not presented here as a finished commercial audio product.</p></div><div class="status-columns"><div class="status-block current"><span>Current build</span><ul><li>Deterministic procedural reference rendering</li><li>Persistent render job execution</li><li>Artifact integrity verification</li><li>Service and network boundaries</li><li>Permission-scoped access and audit trail</li></ul></div><div class="status-block future"><span>Not claimed today</span><ul><li>No trained neural audio model in the current repository</li><li>No public SaaS runtime on this GitHub Pages site</li><li>No browser user/session or MFA system claimed here</li><li>No C2PA certification or signed provenance claim</li><li>No production-readiness guarantee</li></ul></div></div></div></section>
+    <section class="section public-boundary" aria-labelledby="boundary-title"><div class="shell boundary-grid"><div class="boundary-mark" aria-hidden="true"><span></span><span></span><span></span></div><div><p class="section-kicker">Public / private boundary</p><h2 id="boundary-title">The showcase is public. The implementation is not.</h2><p>This GitHub Pages repository contains presentation assets only. It does not contain the private application runtime, proprietary source code, model weights, credentials, internal security configuration, private schemas or deployment secrets.</p></div></div></section>
+    <section class="section closing" aria-labelledby="closing-title"><div class="shell closing-card"><p class="eyebrow">Part of the TheArchitectMax software &amp; systems portfolio</p><h2 id="closing-title">One project in a broader systems portfolio.</h2><p>Explore the wider collection of independently developed software, infrastructure and research-oriented projects.</p><a class="button button-primary" href="https://thearchitect-max.github.io/MyProjects/">Open TheArchitectMax HUB <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>Adaptive Audio Synthesis Platform</strong><p>An independent project by TheArchitectMax.</p></div><div class="footer-links"><a href="#top">Back to top</a><a href="IMAGE_CREDITS.md">Visual provenance</a><a href="NOTICE.md">Notice</a></div><p class="copyright">© <span data-year>2026</span> TheArchitectMax. Public project showcase. Underlying software remains proprietary.</p></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
